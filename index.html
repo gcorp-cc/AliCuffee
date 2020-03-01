@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Ui Kit Link -->
+    <link rel="stylesheet" href="css/uikit-rtl.css">
+    <!-- Spring Link -->
+    <link rel="stylesheet" href="css/spring.css">
+    <title>Ali Coffee</title>
+</head>
+<body class="scroll-v  blue-grey darken-2">
+<!-- NavBar -->
+<div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 333">
+<nav class="uk-light uk-box-shadow-medium blue-grey darken-4" uk-navbar="mode: click;">
+    <div class="uk-navbar-left">
+        <ul class="uk-navbar-nav">
+            <li class="uk-active uk-visible@m"><a href="#shopping" uk-toggle> سبد خرید<i class="material-icons">shopping_basket</i></a>
+
+                <div id="shopping" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-full uk-close-large grey lighten-4" type="button" uk-close></button>
+                        <div class="uk-grid-collapse  uk-flex-middle grey lighten-4" uk-grid>
+                            <div class="uk-padding-large uk-text-right" uk-height-viewport>
+                                <h3 class="fa-vazir">سبد خرید</h3>
+                                <p>با اتخاب محصولات و زدن دکمه پرداخت میتوانید سفارش خود را نهایی کرده و نسبت به پرداخت هزینه اقدام نمایید لازم به ذکر است تا نهایی نشدن روند پرداخت میتوانید سفارش خود را ویرایش نمایید و پس از نهایی شدون و پرداخت این امر ممکن نیست </p>
+                                <div class="uk-card uk-card-default uk-card-body uk-width-1-1 uk-border-rounded">
+                                    <table class="uk-table uk-table-hover">
+                                        <caption>لیست سفارشات</caption>
+                                        <thead>
+                                        <tr>
+                                            <th>پرداخت</th>
+                                            <th>قیمت</th>
+                                            <th>نام</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td><button class="uk-button uk-button-danger uk-border-rounded uk-box-shadow-medium uk-box-shadow-hover-large">پرداخت</button></td>
+                                            <td>ريال  2200 </td>
+                                            <td uk-tooltip="title: Hello World">پلاتر</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="uk-active ">
+                <div>
+                    <a class="uk-navbar-toggle white-text" href="#"><i class="material-icons">search</i></a>
+                    <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                        <form class="uk-search uk-search-navbar uk-width-1-1">
+                            <input class="uk-search-input" type="search" placeholder="جستجو " autofocus>
+                        </form>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+    <a class="uk-navbar-item uk-logo uk-navbar-center white-text " href="#"><h1 class="en-font">Ali Coffee</h1></a>
+    <div class="uk-navbar-right">
+<!--       Mobile Menu-->
+        <ul class="uk-navbar-nav uk-hidden@m">
+            <li class="uk-active "><a href="#" uk-toggle="target: #offcanvas-overlay"><i class="material-icons">menu</i></a>
+                <div  id="offcanvas-overlay" uk-offcanvas="overlay: true">
+                    <div class="uk-offcanvas-bar pink darken-2">
+
+                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                        <div class="uk-width-1-1">
+                            <img  src="img/user-icon.svg" class="uk-align-center"  width="99" height="99" alt="user Profile" >
+                            <button class="uk-button pink white-text uk-align-center" type="button">پروفایل</button>
+                            <div  uk-dropdown="animation: uk-animation-slide-top-small; duration: 700;boundary-align:center">
+                                <ul class="uk-nav uk-dropdown-nav uk-text-center">
+                                    <li><a href="#">پرو فایل</a></li>
+                                    <li><a href="#shopping" uk-toggle>سبد خرید</a></li>
+                                    <li class="uk-nav-divider"></li>
+                                    <li><a href="#">خروج</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="uk-nav  uk-link-text uk-text-right">
+                            <li><a href="index.html">خانه </a></li>
+                            <li><a href="shop.html">محصولات </a></li>
+                            <li><a href="#connect" uk-scroll>ارتباط با ما </a></li>
+                            <li><a href="#about" uk-toggle>درباره ما </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+<!--        End Mobile Menu-->
+        <ul class="uk-navbar-nav uk-visible@m">
+            <li class="uk-active "><a href="#about" uk-toggle>درباره ما</a>
+                <div id="about" class="uk-flex-top" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                        <div class="uk-modal-header">
+                            <h2 class="uk-modal-title uk-text-right fa-vazir">انتشارات</h2>
+                        </div>
+                        <div class="uk-modal-body uk-text-right">
+                        <p>مرکز چاپ و انتشار و .. </p>
+                        </div>
+                        <div class="uk-modal-footer uk-text-center ">
+                            <div class="uk-container uk-container-expand ">
+                                Powered By <a class="grey-text text-accent-4" href="http://gcorp.cc/">GCORP 2020  گروه فن آوری جهان نوین راد</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li><a class="white-text" href="#connect" uk-scroll>ارتباط با ما</a></li>
+            <li>
+                <a class="white-text" href="shop.html">محصولات</a>
+            </li>
+            <li><a class="white-text" href="index.html">خانه</a></li>
+        </ul>
+    </div>
+
+</nav>
+</div>
+<!-- SlideShow -->
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: fade;min-height: 333; max-height: 500;autoplay: true;autoplay-interval: 4000;pause-on-hover: true">
+
+    <ul class="uk-slideshow-items">
+        <li>
+            <img src="img/cursel/cursel%20(1).jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <img src="img/cursel/cursel%20(2).jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <img src="img/cursel/cursel%20(3).jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+        <li>
+            <img src="img/cursel/cursel%20(4).jpg" alt="" uk-cover>
+            <div class="uk-position-center uk-position-small uk-text-center">
+                <h2 uk-slideshow-parallax="x: 100,-100">Heading</h2>
+                <p uk-slideshow-parallax="x: 200,-200">Lorem ipsum dolor sit amet.</p>
+            </div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+</div>
+<!--BestSeller-->
+<div class="uk-section-xsmall">
+    <div class="uk-container uk-container-expand">
+        <div class="uk-card blue-grey darken-3 uk-card-body uk-width-1-1 uk-border-rounded">
+            <h5 class="uk-card-title fa-vazir uk-text-right white-text">پرفروش ترین ها</h5>
+            <div uk-slider="center: true;autoplay: true;autoplay-interval: 3000">
+                <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
+                    <ul class="uk-slider-items uk-child-width-1-3@m uk-child-width-1-2@s uk-grid">
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-media-top">
+                                    <img src="img/cup/cup%20(1).jpg" alt="">
+                                </div>
+                                <div class="uk-card-body white-text uk-background-cover " style="background-image: url(img/bg/bg2.jpg);">
+                                    <h1 class="uk-card-title white-text uk-text-center ">کاپوچینو</h1>
+                                    <ul class="uk-list uk-text-right">
+                                        <li>تعداد : 250 عدد</li>
+                                        <li class="">قیمت : 2500 تومان</li>
+                                        <li><button class="uk-button pink darken-2 white-text uk-border-rounded uk-box-shadow-medium uk-box-shadow-hover-large">افزودن به سبد خرید</button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="uk-card uk-card-default">
+                                <div class="uk-card-body white-text uk-background-cover " style="background-image: url(img/bg/bg2.jpg);">
+                                    <h1 class="uk-card-title white-text uk-text-center ">کاپوچینو</h1>
+                                    <ul class="uk-list uk-text-right">
+                                        <li>تعداد : 250 عدد</li>
+                                        <li class="">قیمت : 2500 تومان</li>
+                                        <li><button class="uk-button pink darken-2 white-text uk-border-rounded uk-box-shadow-medium uk-box-shadow-hover-large">افزودن به سبد خرید</button></li>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-card-media-top">
+                                    <img src="img/cup/cup%20(1).jpg" alt="">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<footer class="blue-grey darken-4">
+    <div class="uk-section-xsmall  ">
+        <div class="uk-container uk-container-expand">
+            <div class="uk-section white-text">
+                <div class="uk-container uk-text-right">
+
+                    <div class="uk-grid-match uk-child-width-1-3@s" uk-grid>
+                        <div>
+                            <h3 class="white-text uk-text-right">لینک ها</h3>
+                            <div class="uk-child-width-1-4 uk-align-center">
+                                <img  src="img/footer/enamad_icon__text_color_blue_1024.png">
+                                <img  src="img/footer/com.zarinpal.ewallets.png">
+                                <img  src="img/footer/GCORPLogo3.png">
+                            </div>
+                        </div>
+                        <div id="connect">
+                            <h4 class="white-text uk-text-right">نشانی و ارتباط با ما </h4>
+                            <ul class="uk-list">
+                                <li><address>نشانی : شیراز چهار راه باهنر</address></li>
+                                <li>تماس : 09325</li>
+                                <li>
+                                    <div class="uk-margin ">
+                                        <input class="uk-text-right uk-border-rounded uk-input uk-form-success uk-form-width-medium" type="text" placeholder="form-success" value="عضویت در خبر نامه">
+                                        <button class="uk-button pink uk-border-rounded uk-margin">ارسال ایمیل</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="white-text uk-text-right">لینک های دسترسی </h4>
+                            <ul class="uk-list uk-link-text">
+                                <li><a href="index.html">خانه</a></li>
+                                <li><a href="shop.html">محصولات</a></li>
+                                <li><a href="#connect" uk-scroll>ارتباط با ما </a></li>
+                                <li><a href="#about" uk-toggle>درباره ما</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="uk-section-xsmall logo">
+        <div class="uk-container uk-container-expand white-text">
+Powered By <a class="white-text" href="http://gcorp.cc/">GCORP 2020  گروه فن آوری جهان نوین راد</a>
+        </div>
+    </div>
+
+</footer>
+<!-- Script  -->
+<script src="js/jquery.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/spring.js"></script>
+</body>
+
+</html>
